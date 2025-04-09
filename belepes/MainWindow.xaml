@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Image x:Name="image" HorizontalAlignment="Left"  Margin="121,99,0,0" VerticalAlignment="Top" Height="300"  Width="300" Source="/MS-8712.jpg" Stretch="None" RenderTransformOrigin="0.555,0.598"/>
+        <Button x:Name="Belepes" Content="Belépés" HorizontalAlignment="Left" Height="60" Margin="497,114,0,0" VerticalAlignment="Top" Width="150" Click="Belepes_Click"/>
+        <Button x:Name="Kilepes" Content="Kilépés" HorizontalAlignment="Left" Height="60" Margin="497,275,0,0" VerticalAlignment="Top" Width="150" Click="Kilepes_Click"/>
     </Grid>
 </Window>

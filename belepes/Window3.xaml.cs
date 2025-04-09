@@ -10,31 +10,31 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace belepes
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Window3.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Window3 : Window
     {
-        public MainWindow()
+        public Window3()
         {
             InitializeComponent();
         }
 
-        private void Belepes_Click(object sender, RoutedEventArgs e)
+        private void button_Click(object sender, RoutedEventArgs e)
         {
-            Window1 belepes = new Window1();
-            belepes.Show();
-            this.Close();
-        }
+            int id = int.Parse(texbox1.Text); 
+            string nev = textbox2.Text;      
+            int atlag = int.Parse(textbox3.Text); 
 
-        private void Kilepes_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
+
+            tanulo ujTanulo = new tanulo(id, nev, atlag);
+
+            
+            Tanulok.Add(ujTanulo);
         }
     }
 }

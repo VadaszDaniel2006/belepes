@@ -10,31 +10,23 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace belepes
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Window4.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Window4 : Window
     {
-        public MainWindow()
+        public Window4()
         {
             InitializeComponent();
         }
 
-        private void Belepes_Click(object sender, RoutedEventArgs e)
+        private void dataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            Window1 belepes = new Window1();
-            belepes.Show();
-            this.Close();
-        }
-
-        private void Kilepes_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
+            dataGrid.ItemsSource = adatlista;
         }
     }
 }
